@@ -12,7 +12,7 @@ const renderToDoItems = () => {
     markup += `<section class="to-do-item  border-bottom" id=${index}>
     <div class="to-do-edit hide flex-row border-bottom">
     <input type="text" class="to-do-input" placeholder="Input a task or use the delete button...">
-    <span class="material-symbols-outlined to-do-addTask">add-task</span>
+    <span class="material-symbols-outlined to-do-addTask">add_task</span>
     </div>
     <div class="flex-row to-do-task">
     <input type="checkbox" ${elem.completed && 'checked'}>

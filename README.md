@@ -1,75 +1,124 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# To Do list: list structure.
+In this project, I built a simple HTML list of To Do tasks. The list was styled according to the specifications listed in this lesson. This simple web page was built using webpack and served by a webpack dev server.
 
-> Description the project.
+> Learning objectives
+
+complete-website-with-nav
+- To Use webpack to bundle JavaScript.
+- To Learn how to use proper ES6 syntax.
+- To Use ES6 modules to write modular JavaScript.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- VANILLA JAVASCRIPT
+- WEB PACK
 
-## Live Demo (if available)
+## Additional Tools
 
-[Live Demo Link](https://livedemo.com)
-
+- WebHint
+- Stylelint
+- ESlint
+- Node Packet Manager
+- Git and GitHub
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+To get a local copy of this project up and running on your local machine follow the steps below.
 
 ### Prerequisites
 
+- Basic html, css and medium Javascript know how.
+- Git installation
+- A text editor
+- A terminal
+- A web browser to view output e.g Google Chrome
+- An IDE e.g Visual studio code
+
 ### Setup
 
-### Install
+- Clone this repository or download the Zip folder:
+
+```
+git clone https://github.com/GraceAbike/To-Do-List.git
+```
+
+- Navigate to the location of the folder in your machine:
+
+**`you@your-Pc-name:~$ cd <folder>`**
 
 ### Usage
 
-### Run tests
+- After Cloning this repo to your local machine
+- Open the `index.html` in your browser
+
+### Run Tests
+
+To track linter errors locally follow these steps:
+
+Download all the dependencies run:
+
+```
+npm install
+```
+
+Track HTML linter errors run:
+
+```
+npx hint .
+```
+
+Track CSS linter errors run:
+
+```
+npx stylelint "**/*.{css,scss}"
+```
+
+Track JavaScript linter errors run:
+
+```
+npx eslint .
+```
 
 ### Deployment
 
+- I used GitHub Pages to deploy my website
+- For more information about publishing sources, see "[About github page](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)"
 
 
-## Authors
+## Author
 
-👤 **Author1**
+👤 **Grace Abike**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@GraceAbike](https://github.com/GraceAbike)
+- Twitter: [@GraceAbike1](https://twitter.com/GraceAbike1)
+- LinkedIn: [Grace Abike](https://www.linkedin.com/in/grace-abike-02770522a/)
+- Angel: [Grace-Abike](https://angel.co/u/grace-abike)
+## Credits
 
-👤 **Author2**
+- Project from [Microverse💕](https://bit.ly/MicroverseTN) Javacript & Networking module (Module 2)
+- Images inspired by [Google Fonts](https://fonts.google.com/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/GraceAbike/To-Do-List/issues).
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a ⭐️ if you like this project and how we manage to build it!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks to the Microverse team for the great curriculum.
+- Thanks to the Code Reviewer(s) for the insightful feedbacks.
+- A great thanks to My coding partner(s), morning session team, and standup team for their contributions.
+- Hat tip to anyone whose code was used.
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](MIT.md) licensed

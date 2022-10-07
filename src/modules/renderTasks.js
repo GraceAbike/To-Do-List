@@ -30,6 +30,11 @@ const renderToDoItems = () => {
     removeBtnsEl.forEach((item) => {
       item.addEventListener('click', (e) => {
         itemsArray.splice(e.target.id, 1);
+        let i = 1;
+        itemsArray.forEach((item) => {
+          item.index = i;
+          i += 1;
+        });
         localStorage.setItem('itemsArray', JSON.stringify(itemsArray));
         renderToDoItems();
       });

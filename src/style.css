@@ -27,6 +27,7 @@ body {
 .flex-row {
   display: flex;
   align-items: center;
+  gap: 0.7rem;
   justify-content: space-between;
   padding: 1rem 1rem;
 }
@@ -52,11 +53,6 @@ input::placeholder {
 
 .inputError::placeholder {
   color: rgb(255, 113, 113);
-}
-
-.to-do-item {
-  gap: 0.7rem;
-  justify-content: stretch;
 }
 
 .to-do-item .to-do-item-icons {

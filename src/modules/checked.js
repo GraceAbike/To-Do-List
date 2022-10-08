@@ -19,5 +19,4 @@ const checked = () => {
     });
   });
 };
-
 export default checked;

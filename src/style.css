@@ -61,6 +61,10 @@ input::placeholder {
   color: rgb(255, 113, 113);
 }
 
+button {
+  border: transparent;
+  background-color: transparent;
+}
 
 .to-do-item {
   gap: 0.7rem;

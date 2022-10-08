@@ -20,6 +20,12 @@ body {
   box-shadow: 0.1rem 0.1rem 10px rgb(108, 108, 108);
 }
 
+.rotate {
+  transition: transform 2s ease-in-out;
+  transform: rotate(360deg);
+  color: red;
+}
+
 .material-symbols-outlined {
   cursor: pointer;
 }
@@ -53,6 +59,34 @@ input::placeholder {
 
 .inputError::placeholder {
   color: rgb(255, 113, 113);
+}
+
+button {
+  border: transparent;
+  background-color: transparent;
+}
+
+.to-do-item {
+  gap: 0.7rem;
+  justify-content: stretch;
+}
+
+.to-do-add {
+  justify-content: space-between;
+}
+
+.to-do-input {
+  border: transparent;
+  outline-width: 0;
+  font-size: 1rem;
+  font-style: italic;
+  width: 65vw;
+}
+
+main {
+  overflow-y: scroll;
+  height: max-content;
+  max-height: 57vh;
 }
 
 .to-do-item .to-do-item-icons {

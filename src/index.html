@@ -14,10 +14,14 @@
 				<h3>Today's To Do</h3>
 				<span class="material-symbols-outlined"> autorenew </span>
 			</div>
-			<div class="to-do-add flex-row border-bottom">
+			<form class="to-do-add flex-row border-bottom">
 				<input type="text" class="to-do-input" placeholder="Add to your list...">
-				<span class="material-symbols-outlined to-do-addTask"> add_task </span>
-			</div>
+				<button type="submit">
+					<span class="material-symbols-outlined to-do-addTask">
+						add_task
+					</span>
+				</button>
+			</form>
 		</header>
 		<main class="to-do-items"></main>
 		<footer>Clear all completed</footer>

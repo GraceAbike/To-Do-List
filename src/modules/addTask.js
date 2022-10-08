@@ -1,12 +1,14 @@
 import itemsArray from './itemsArray.js';
 import renderToDoItems from './renderTasks.js';
+import indexInit from './indexInit.js';
 
-const addElBtn = document.querySelector('.to-do-addTask');
+const addForm = document.querySelector('.to-do-add');
 const input = document.querySelector('input');
 const todoinputEl = document.querySelector('.to-do-input');
 
 const addTask = () => {
-  addElBtn.addEventListener('click', () => {
+  addForm.addEventListener('submit', (e) => {
+    e.preventDefault();
     const newTask = todoinputEl.value;
     if (newTask) {
       const newTodo = {
@@ -17,6 +19,7 @@ const addTask = () => {
       itemsArray.push(newTodo);
       localStorage.setItem('itemsArray', JSON.stringify(itemsArray));
       renderToDoItems();
+      indexInit();
       todoinputEl.value = '';
     } else {
       input.classList.add('inputError');
@@ -26,4 +29,5 @@ const addTask = () => {
     }
   });
 };
+
 export default addTask;

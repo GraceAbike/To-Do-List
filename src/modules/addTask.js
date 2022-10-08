@@ -14,6 +14,7 @@ const addTask = () => {
       const newTodo = {
         description: newTask,
         completed: false,
+        index: itemsArray.length + 1,
       };
       itemsArray.push(newTodo);
       localStorage.setItem('itemsArray', JSON.stringify(itemsArray));

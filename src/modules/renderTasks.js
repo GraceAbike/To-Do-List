@@ -24,6 +24,51 @@ const renderToDoItems = () => {
     </div>
   </section>`;
   });
+
+  const removeTask = () => {
+    const removeBtnsEl = [...document.getElementsByClassName('dltTaskBtn')];
+    removeBtnsEl.forEach((item) => {
+      item.addEventListener('click', (e) => {
+        itemsArray.splice(e.target.id, 1);
+        let i = 1;
+        itemsArray.forEach((item) => {
+          item.index = i;
+          i += 1;
+        });
+        localStorage.setItem('itemsArray', JSON.stringify(itemsArray));
+        renderToDoItems();
+      });
+    });
+  };
+
+  const editTask = () => {
+    const editTaskBtns = [...editTaskBtnEl];
+    editTaskBtns.forEach((item) => {
+      item.addEventListener('click', () => {
+        const taskID = item.id;
+        const editTaskEls = [...editTaskEl];
+        const currentTask = editTaskEls[taskID];
+        const currentTaskEdit = currentTask.childNodes[1];
+        toDoTask[taskID].classList.add('hide');
+        currentTask.classList.remove('hide');
+        currentTaskEdit.value = itemsArray[taskID].description;
+        currentTask.childNodes[3].addEventListener('click', () => {
+          const editedTask = currentTask.childNodes[1].value;
+          if (editedTask) {
+            itemsArray[taskID].description = editedTask;
+            localStorage.setItem('itemsArray', JSON.stringify(itemsArray));
+            renderToDoItems();
+          } else {
+            currentTaskEdit.classList.add('inputError');
+            setTimeout(() => {
+              currentTaskEdit.classList.remove('inputError');
+            }, 1000);
+          }
+        });
+      });
+    });
+  };
+  
   toDoItemsEl.innerHTML = markup;
   checked();
 };

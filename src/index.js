@@ -9,7 +9,7 @@ import indexInit from './modules/indexInit.js';
 
 const todoinputEl = document.querySelector('.to-do-input');
 const addForm = document.querySelector('.to-do-add');
-
+const footer = document.querySelector('footer');
 const updateTasks = () => {
   localStorage.setItem('toDoItemsArray', JSON.stringify(itemsArray));
   renderToDoItems();
@@ -24,7 +24,10 @@ addForm.addEventListener('submit', (e) => {
 });
 
 renderToDoItems();
-completedClear();
+footer.addEventListener('click', () => {
+  completedClear();
+  updateTasks();
+});
 allClear();
 
 const removeBtnsEl = [...document.getElementsByClassName('dltTaskBtn')];

@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  top: 50%;
+  width: 90vw;
+  left: 50%;
+  height: max-content;
+  margin: auto;
+  max-width: 500px;
+  position: fixed;
+  max-height: 90vh;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0.1rem 0.1rem 10px rgb(108, 108, 108);
+}
+
+.rotate {
+  transition: transform 2s ease-in-out;
+  transform: rotate(360deg);
+  color: red;
+}
+
+.material-symbols-outlined {
+  cursor: pointer;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+input::placeholder {
+  color: rgb(198, 198, 198);
+  transition: color 0.4s ease-in;
+}
+
+.inputError::placeholder {
+  color: rgb(255, 113, 113);
+  font-size: large;
+}
+
+button {
+  border: transparent;
+  background-color: transparent;
+}
+
+.to-do-add {
+  justify-content: space-between;
+}
+
+.to-do-input {
+  border: transparent;
+  outline-width: 0;
+  font-size: 1rem;
+  font-style: italic;
+  width: 65vw;
+}
+
+main {
+  overflow-y: scroll;
+  height: max-content;
+  max-height: 57vh;
+}
+
+.to-do-item .to-do-item-icons {
+  margin-left: auto;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.hide {
+  visibility: hidden;
+  position: absolute;
+}
+
+footer {
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+
+footer:hover {
+  background-color: rgb(199, 199, 199);
+}
+
+footer:active {
+  font-size: 1.4rem;
+}

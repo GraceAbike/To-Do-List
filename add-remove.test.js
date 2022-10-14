@@ -1,6 +1,6 @@
 import addTask from './src/modules/addTask.js';
 import itemsArray from './src/modules/itemsArray.js';
-import removeT from './src/modules/remove.js';
+import removeTast from './src/modules/remove.js';
 
 describe('test addTask and removeTask', () => {
   test('test add task function', () => {
@@ -10,7 +10,7 @@ describe('test addTask and removeTask', () => {
   });
 
   test('test remove task function', () => {
-    removeT(0);
+    removeTast(0);
     expect(itemsArray).toHaveLength(1);
   });
 });

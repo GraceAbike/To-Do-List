@@ -6,7 +6,6 @@ const addTask = (newTask) => {
     const newTodo = {
       description: newTask,
       completed: false,
-      index: itemsArray.length + 1,
     };
     itemsArray.push(newTodo);
   } else {

@@ -1,7 +1,7 @@
 import './styles.css';
 import addTask from './modules/addTask.js';
 import itemsArray from './modules/itemsArray.js';
-import removeTast from './modules/remove.js';
+import removeT from './modules/remove.js';
 import renderToDoItems from './modules/renderTasks.js';
 import completedClear from './modules/completedClear.js';
 import allClear from './modules/allClear.js';
@@ -11,7 +11,7 @@ const todoinputEl = document.querySelector('.to-do-input');
 const addForm = document.querySelector('.to-do-add');
 const footer = document.querySelector('footer');
 const updateTasks = () => {
-  localStorage.setItem('toDoItemsArray', JSON.stringify(itemsArray));
+  localStorage.setItem('itemsArray', JSON.stringify(itemsArray));
   renderToDoItems();
 };
 
@@ -33,7 +33,7 @@ allClear();
 const removeBtnsEl = [...document.getElementsByClassName('dltTaskBtn')];
 removeBtnsEl.forEach((item) => {
   item.addEventListener('click', (e) => {
-    removeTast(e.target.id);
+    removeT(e.target.id);
     updateTasks();
   });
 });

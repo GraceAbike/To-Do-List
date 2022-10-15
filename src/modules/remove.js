@@ -1,7 +1,7 @@
 import itemsArray from './itemsArray.js';
 
-const removeTast = (task) => {
+const removeT = (task) => {
   itemsArray.splice(task, 1);
 };
 
-export default removeTast;
+export default removeT;

@@ -1,7 +1,7 @@
 import itemsArray from './itemsArray.js';
 
-const editTast = (task, num) => {
+const editT = (task, num) => {
   itemsArray[num].description = task;
 };
 
-export default editTast;
+export default editT;

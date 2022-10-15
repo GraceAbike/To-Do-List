@@ -15,6 +15,7 @@ body {
   margin: auto;
   max-width: 500px;
   position: fixed;
+  max-height: 90vh;
   border-radius: 5px;
   transform: translate(-50%, -50%);
   box-shadow: 0.1rem 0.1rem 10px rgb(108, 108, 108);
@@ -43,32 +44,19 @@ body {
   flex-direction: column;
 }
 
-input {
-  border: transparent;
-  outline-width: 0;
-  font-size: 1rem;
-  font-style: italic;
-  padding-right: 6rem;
-}
-
 input::placeholder {
   color: rgb(198, 198, 198);
   transition: color 0.4s ease-in;
-  padding-right: 150%;
 }
 
 .inputError::placeholder {
   color: rgb(255, 113, 113);
+  font-size: large;
 }
 
 button {
   border: transparent;
   background-color: transparent;
-}
-
-.to-do-item {
-  gap: 0.7rem;
-  justify-content: stretch;
 }
 
 .to-do-add {

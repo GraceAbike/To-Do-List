@@ -1,5 +1,5 @@
 import itemsArray from './itemsArray.js';
-import checked from './checked.js';
+import checked from './completedUpdate.js';
 
 const toDoItemsEl = document.querySelector('.to-do-items');
 
@@ -28,5 +28,4 @@ const renderToDoItems = () => {
   toDoItemsEl.innerHTML = markup;
   checked();
 };
-
 export default renderToDoItems;
